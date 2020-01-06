@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="reset.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Резюме</title>
+</head>
+<body>
+    <div id="root">
+        <div class="row">
+            <header id="header">
+                <div class="header__info">
+                    <div id="tabs">
+                        <div class="tab whiteborder">Общая информация</div>
+                        <div class="tab">Hard skills</div>
+                        <div class="tab">Soft skills</div>
+                        <div class="tab">Проекты</div>
+                        <div class="tab">Опыт</div>
+                        <div class="tab">Будущее</div>
+                
+                        <div class="tab-content">
+                            <span>Фамилия:</span>
+                            <p></p>
+                            <span>Имя:</span>
+                            <p></p>
+                            <span>Отчество:</span>
+                            <p></p>
+                            <span>Пол:</span>
+                            <p></p>
+                            <span>Возраст:</span>
+                            <p></p>
+                            <span>Город:</span>
+                            <p></p>
+                            <span>Номер:</span>
+                            <p></p>
+                            <span>Почта:</span>
+                            <p></p>
+                        </div>
+                        <div class="tab-content">2</div>
+                        <div class="tab-content">3</div>
+                        <div class="tab-content">4</div>
+                        <div class="tab-content">5</div>
+                        <div class="tab-content">6</div>
+                    </div>
+                </div>
+                <div class="header__short-info">
+                    <div class="photos">
+                        <img class="avatar" src="photos/7.jpg" alt="Владимир Абрамянц">
+                    </div>
+                    <div class="facts">
+                        <div class="slider">
+                            <div class="slider__mySlides fade">
+                                <p class="slider__text">В детстве, как и все, мечтал стать космонавтом...</p>
+                            </div>
+                    
+                            <div class="slider__mySlides fade">
+                                <p class="slider__text">Palm</p>
+                            </div>
+                    
+                            <div class="slider__mySlides fade">
+                                <p class="slider__text">Palm Trees </p>
+                            </div>
+                        </div>
+                    
+                        <div class="button">
+                            <span class="button__dot" onclick="currentSlide(1)"></span>
+                            <span class="button__dot" onclick="currentSlide(2)"></span>
+                            <span class="button__dot" onclick="currentSlide(3)"></span>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <main id="main">
+                <section class="content">2/1</section>
+                <aside class="sidebar">2/2</aside>
+            </main>
+        </div>
+        <footer id="footer">
+            <p>Copyright &copy; Created by <span class="footer__span">Vladimir</span></p>
+        </footer>
+    </div>
+
+    <script src="main.js" defer></script>
+    <script src="tabs.js" defer></script>
+    <script src="slider.js" defer></script>
+</body>
+</html>
