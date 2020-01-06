@@ -52,22 +52,27 @@
 }
 
 /* TABS from .header__info */
+#tabs{
+    width: 100%;
+    height: 90%;
+}
 #tabs, .tab{
     display: inline-block;
-    padding: 5px 10px;
+    padding: 5px 15px;
     cursor: pointer;
     position: relative;
     z-index: 5;
-    transition: all .3s ease-in-out;
+    transition: all .7s ease-in-out;
 }
 .whiteborder{
+    background-color: #8C543F;
+    color: #fff;
     border: 1px solid #707070;
     border-bottom: 1px solid white;
     border-radius: 3px 3px 0 0;
 }
 #tabs .tab-content{
-    width: 100%;
-    height: 300px;
+    height: 100%;
     border: 1px solid #707070;
     position: relative;
     top: -1px;
@@ -86,6 +91,87 @@
     color: #fff;
     border-radius: 3px 3px 0 0;
 }
+/* CONTENT into tab-content */
+
+/* ОБЩАЯ ИНФОРМАЦИЯ */
+.base-info{
+    display: flex;
+    flex-flow: row wrap;
+}
+.title{
+    font: 600 italic 1.1rem 'Times New Roman';
+    color: rgb(58, 58, 58);
+    padding: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.base{
+    flex: 50%;
+}
+.base-full{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+.label{
+    padding-left: 10px;
+    color: rgb(105, 105, 105);
+}
+.base-full__p a{
+    display: block;
+}
+.hobbies{
+    flex: 50%;
+}
+/* КОНЕЦ */
+
+/* HARD SKILLS */
+.hard{
+    display: flex;
+    flex-flow: row wrap;
+}
+.hard__items{
+    flex: 40%;
+    font-size: 0.85rem;
+}
+.old{
+    font-size: 0.8rem;
+    color: red;
+}
+/* END */
+
+/* SOFT SKILLS */
+.soft{
+    display: flex;
+    flex-flow: row wrap;
+}
+.soft__items{
+    flex: 40%;
+    font-size: 1rem;
+    margin: 10px;
+}
+/* END */
+
+/* PROJECT */
+/* END */
+
+/* EXPIRIENCE */
+.expirience{
+    display: flex;
+    flex-flow: row wrap;
+}
+.official{
+    flex: 50%;
+}
+.other{
+    flex: 50%;
+}
+/* END */
+
+/* FUTURE */
+/* END */
+
+/* END CONTENT */
 /* END TABS */
 
 /* SLIDER FROM .facts */
@@ -196,6 +282,34 @@
     font-weight: bold;
     text-decoration: underline;
 }
+
+
+/* MIXIN */
+.mt-5{
+    margin-top: 5px;
+}
+.mt-10{
+    margin-top: 10px;
+}
+.mt-15{
+    margin-top: 15px;
+}
+.mt-20{
+    margin-top: 20px;
+}
+.pl-5{
+    padding-left: 5px;
+}
+.pl-10{
+    padding-left: 10px;
+}
+.pl-15{
+    padding-left: 15px;
+}
+.pl-20{
+    padding-left: 20px;
+}
+/* END MIXIN */
 
 
 @media screen and (max-width: 700px) {
